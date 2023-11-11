@@ -1,10 +1,10 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-
-function App() {
+// eslint-disable-next-line
+export default function () {
   return (
-    
-  );
-}
+   <div className='container'>
 
-export default App;
+   </div>
+  );
+};
