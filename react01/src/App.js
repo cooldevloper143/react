@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
   return (
-   <h1>chai sutta bar</h1>
+   <h1>mba chai wala</h1>
   );
 }
 
