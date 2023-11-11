@@ -12,7 +12,12 @@ function App() {
     setCounter(counter + 1);
   };
   var removevalue = () => {
-    setCounter(counter - 1);
+    if (counter>=1) {
+      setCounter(counter - 1);
+      
+    } else {
+      setCounter(0)
+    }
   };
 
   return (
