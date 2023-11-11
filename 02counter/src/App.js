@@ -9,7 +9,7 @@ function App() {
     // setCounter = counter + 1
     // console.log(setCounter)
     // return counter;
-    setCounter(counter + 1);
+    setCounter(counter+1);
   };
   var removevalue = () => {
     if (counter>=1) {
@@ -22,7 +22,7 @@ function App() {
 
   return (
     <>
-      <h1>chai aur react</h1>
+      <h1>counter value project </h1>
       <h2>counter value : {counter}</h2>
 
       <button onClick={addValue}>Add value</button>
