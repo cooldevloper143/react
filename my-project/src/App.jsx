@@ -3,7 +3,30 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 
+import { InputBox } from "./components/InputBox";
+
+import useCurrencyInfo from "./hooks/useCurrencyinfo";
+
 function App() {
+  const [amount, setAmount] = useState(0);
+  const [from, setFrom] = useState("usd");
+  const [to, setTo] = useState("inr");
+  const [convertedAmount, setConverterAmount] = useState(0);
+
+  const CurrencyInfo = useCurrencyInfo(from);
+
+  const options = Object.keys(CurrencyInfo);
+
+  const swap = () => {
+    setFrom(to);
+    setTo(from);
+    setConverterAmount(amount);
+    setAmount(convertedAmount);
+  };
+
+  const convert = () => {
+    setConverterAmount(amount * CurrencyInfo[to]);
+  };
   return (
     <div
       className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
