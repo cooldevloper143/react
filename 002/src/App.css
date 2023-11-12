@@ -1,11 +1,95 @@
-*{
-  height: 100%;
-  width: 100%;
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
 }
-.container{
-  height:100%;
-  width:100%;
-  background-color: aqua;
+@font-face {
+  font-family: "myFont";
+  src: local("myFont"), url("/SeasideResortNF/SEASRN__.ttf") format("truetype");
+}
+/* font-family: 'myFont', sans-serif */
+.main {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  background-color: rgba(0, 0, 0, 0.796);
+  border-radius: 20px;
+  color: orange;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+.main h2 {
+  align-self: center;
+  display: flex;
+  font-family: "myFont", sans-serif;
+  font-size: 50px;
+  align-items: center;
+  height: 70px;
+  justify-content: center;
+}
+.inputtext {
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  /* display: flex; */
+
+  outline: none;
+  height: 30px;
+  width: 250px;
+  border-radius: 10px;
+  text-align: center;
+  padding-bottom: 5px;
+}
+.copy {
+  outline: none;
+  background-color: blue;
+  color: white;
+  height: 30px;
+  width: 70px;
+  border-radius: 10px;
+  text-align: center;
+  padding-bottom: 5px;
+  margin-left: 5px;
+}
+.pass {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+.input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 100px;
+  /* background-color: aqua; */
+}
+.range {
+  height: 50px;
+  width: 150px;
+  cursor: pointer;
+}
+.nobox {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+.charbox {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  /* border-radius: 50p; */
+}
+.labellength{
+  height: 50px;
+  width: fit-content;
+  text-align: center;
+  color:orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
