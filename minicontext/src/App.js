@@ -1,17 +1,16 @@
-// import logo from './logo.svg';
 import './App.css';
-import UserContextPorvider from './context/UserContextProvider';
+import Login from './component/Login';
+import Profile from './component/Profile';
+import UserContextProvider from './context/UserContextProvider';
 
 function App() {
   return (
-    <UserContextPorvider/>
+    <UserContextProvider>
+      <h1>react with chai and share is important </h1>
+      <Login/>
+      <Profile/>
+    </UserContextProvider>
   );
 }
 
 export default App;
-
-
-
-
-
-

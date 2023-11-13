@@ -5,25 +5,30 @@ function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-    const {setUser}=useContext(UserContext)
+  const { setUser } = useContext(UserContext);
 
-  const handlesubmit = () => {};
+  const handleSubmit = () => {
+    // handle form submission logic here
+  };
+
   return (
     <div>
-      <h2>login</h2>
+      <h2>Login</h2>
       <input
         type="text"
+        name="username"
         value={username}
         onChange={(e) => setUsername(e.target.value)}
-        placeholder="username"
+        placeholder="Username"
       />
       <input
-        type="text"
+        type="password"
+        name="password"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
-        placeholder="password"
+        placeholder="Password"
       />
-      <button onClick={handlesubmit}>submit</button>
+      <button onClick={handleSubmit}>Submit</button>
     </div>
   );
 }
