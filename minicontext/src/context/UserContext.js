@@ -1,10 +1,8 @@
 import React from "react";
 
-const  UserContext = React.createContext()
+export const UserContext = React.createContext();
+export const PassContext = React.createContext();
 
-export default UserContext;
-
-<>
-<card/>
-
-</>
+export default function ComponentName() {
+  return <>{/* Your component's content here */}</>;
+}
