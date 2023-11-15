@@ -3,7 +3,7 @@ import { useTodo } from "../context";
 
 function TodoForm() {
   const [todo, setTodo] = useState("");
-  const { addTodo } = useTodo();
+  const { addTodo } = useTodoContext();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -11,7 +11,7 @@ function TodoForm() {
     if (todo) {
       addTodo({
         id: Date.now(),
-        title: todo,
+        text: todo,
         completed: false,
       });
 
