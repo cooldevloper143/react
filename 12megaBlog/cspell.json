@@ -1,0 +1,10 @@
+
+{
+    "version": "0.2",
+    "ignorePaths": ["/path/to/ignore"],
+    "dictionaryDefinitions": [{"definition1" : "definition2"}],
+    "dictionaries": ["dictionary1", "dictionary2"],
+    "words": ["word1", "word2"],
+    "ignoreWords": ["ignoreWord1", "ignoreWord2"],
+    "import": ["import1", "import2"]
+}
