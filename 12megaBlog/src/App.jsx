@@ -1,3 +1,8 @@
+/**
+ * App component renders the main layout of the application.
+ * Initializes authentication state by checking for current user.
+ * Renders Header, Footer and Outlet for nested routes.
+ */
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
